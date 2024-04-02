@@ -1,42 +1,84 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+/* App.css */
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke; 
+}
+
+.App {
+  width: 100%;
+  max-width: 600px; /* Säkerställer att appen inte blir alltför bred */
+  margin: auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  border-radius: 5px;
+  text-align: center; /* Säkerställer att text och inline-element som <knapp> är centrerade */
+  color: black;
+}
+
+header {
+  margin-bottom: 20px;
+  color: black;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin-right: 10px;
+  width: calc(100% - 120px);
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: whitesmoke;
+  color: black;
+}
+
+button {
+  padding: 10px;
+  margin: 10px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+button:hover {
+  background-color: #0056b3;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.loading {
+  color: #007bff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.error {
+  color: red;
 }
 
-.card {
-  padding: 2em;
+.submitbutton{
+  display: inline-block;
 }
 
-.read-the-docs {
-  color: #888;
+.Label{
+  display: block;
+  margin-top: 20px;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: whitesmoke;
+  background-color: black;
+}
+
+.footer-link {
+  color: lightblue;
 }
